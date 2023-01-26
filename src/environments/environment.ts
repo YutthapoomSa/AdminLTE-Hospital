@@ -3,11 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: true,
-  // Url: 'http://192.168.50.145:3000'
-  // Url: 'http://localhost:3000'
-  // Url: 'https://api-track-document.flowmisite.com'
-  Url: 'http://pdsolution.trueddns.com:44779/'
+    production: false,
+
+    Url: 'http://pdsolution.trueddns.com:44779'
 };
 
 /*

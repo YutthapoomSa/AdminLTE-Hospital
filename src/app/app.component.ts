@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ApiUserService} from '@services/api-user.service';
+import {ApiUserService} from '@services/api/api-user.service';
 import {ReqRefreshToken} from '@services/api/api-user/interface/users-refresh-token';
 import {LocalService} from '@services/local.service';
 import moment from 'moment';

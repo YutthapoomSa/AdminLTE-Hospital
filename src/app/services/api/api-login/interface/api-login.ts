@@ -1,5 +1,5 @@
 export class reqLogin {
-    email: string;
+    username: string;
     password: string;
 }
 
@@ -12,12 +12,12 @@ export class resLogin {
 export class ResLoginData {
     id: number;
     email: string;
-    password: string;
+    username: string;
     firstName: string;
     lastName: string;
     role: string;
     status: boolean;
-    image: any;
+    image: string;
     gender: string;
     phoneNumber: string;
     accessToken: string;

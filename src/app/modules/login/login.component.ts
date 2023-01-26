@@ -28,13 +28,13 @@ export class LoginComponent implements OnInit, OnDestroy {
     public isAuthLoading = false;
     public isGoogleLoading = false;
     public isFacebookLoading = false;
-    public isEmail = true;
+    public isUsername = true;
     public textColor = '';
     public reqLogin: reqLogin = {
         // username: '',
         // password: ''
-        email: '',
-        password: ''
+        username: 'admin1',
+        password: 'admin1'
     };
 
     constructor(
@@ -63,7 +63,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     login() {
         this.isAuthLoading = true;
         const body = {
-            email: this.reqLogin.email,
+            username: this.reqLogin.username,
             password: this.reqLogin.password
         };
 
@@ -86,7 +86,7 @@ export class LoginComponent implements OnInit, OnDestroy {
                     });
                     this.isAuthLoading = false;
 
-                    await this.router.navigate(['/']);
+                    await this.router.navigate(['/app/pages/dashboard']);
                 } else {
                     console.log('no pass');
                 }
@@ -109,8 +109,8 @@ export class LoginComponent implements OnInit, OnDestroy {
         if (
             this.reqLogin.password !== '' &&
             this.reqLogin.password !== null &&
-            this.reqLogin.email !== '' &&
-            this.reqLogin.email !== null
+            this.reqLogin.username !== '' &&
+            this.reqLogin.username !== null
         ) {
             return false;
         } else {
