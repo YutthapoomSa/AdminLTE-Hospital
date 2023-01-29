@@ -1,3 +1,11 @@
 .card-primary.card-outline{
-  border-top: 3px solid #FFF333 !important;
+  border-top: 3px solid #239b6d !important;
+}
+
+#grad {
+  background: rgb(0, 255, 115); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgb(10, 124, 67)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(255,0,0,0),rgb(10, 124, 67)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(255,0,0,0),rgb(10, 124, 67)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(255,0,0,0), rgb(10, 124, 67)); /*Standard*/
 }
