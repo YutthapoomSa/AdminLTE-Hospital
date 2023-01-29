@@ -1,100 +1,193 @@
-<div class="content-header">
-    <div class="container-fluid">
-        <div class="row mb-2">
-            <div class="col-sm-6">
-                <h1 class="m-0 text-dark">Dashboard</h1>
-            </div>
-            <!-- /.col -->
-            <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active">Dashboard v1</li>
-                </ol>
-            </div>
-            <!-- /.col -->
-        </div>
-        <!-- /.row -->
+<h3 style="justify-content: center">ข่าวประชาสัมพันธ์</h3>
+
+<!--Carousel (Image slideshow)-->
+<div
+    id="carouselExampleDark"
+    class="carousel carousel-dark slide"
+    data-bs-ride="carousel"
+>
+    <div class="carousel-indicators">
+        <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+        ></button>
+        <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+        ></button>
+        <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+        ></button>
     </div>
-    <!-- /.container-fluid -->
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+            <img
+                src="assets/img/posterRoyalThaiArmy66.png"
+                class="d-block w-100"
+            />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="assets/img/posterPDPA2566.png" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+            <img
+                src="assets/img/bannerarmyonline_2565.gif"
+                class="d-block w-100"
+            />
+        </div>
+    </div>
+    <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+    >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+    >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>
-<!-- /.content-header -->
 
-<!-- Main content -->
-<section class="content">
-    <div class="container-fluid">
-        <!-- Small boxes (Stat box) -->
-        <div class="row">
-            <div class="col-lg-3 col-6">
-                <!-- small box -->
-                <div class="small-box bg-info">
-                    <div class="inner">
-                        <h3>150</h3>
+<br />
 
-                        <p>New Orders</p>
-                    </div>
-                    <div class="icon">
-                        <i class="ion ion-bag"></i>
-                    </div>
-                    <a href="#" class="small-box-footer"
-                        >More info <i class="fas fa-arrow-circle-right"></i
-                    ></a>
+<!--News Card-->
+<div class="contanier">
+    <div class="row">
+        <div class="card-group">
+            <div class="card">
+                <img src="assets/img/area.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">
+                        พล.ต.โชคชัย ขวัญพิชิต ผู้อำนวยการรพ.ค่ายวชิราวุธ/
+                        แพทย์ใหญ่กองทัพภาคที่ 4 ลงพื้นที่พบปะประชาชน ณ
+                        ต.ห้วยกระทิง อ.กรงปินัง จ.ยะลา
+                    </h5>
+                    <p class="card-text">
+                        เมื่อวันที่ 18 ม.ค. 2566 พล.ต.โชคชัย ขวัญพิชิต
+                        ผอ.รพ.ค่ายวชิราวุธ/ แพทย์ใหญ่กองทัพภาคที่ 4
+                        ลงพื้นที่พบปะประชาชนรับฟังปัญหา
+                        แนะนำแนวทางการป้องกันการเกิดโรคไข้มาลาเรีย
+                        พร้อมทั้งลงพื้นที่ทำลายแหล่งเพาะพันธุ์ของพาหนะตัวนำเชื้อโรคไข้มาลาเรีย
+                        (ยุงก้นป่อง) ณ ต.ห้วยกระทิง อ.กรงปินัง จ.ยะลา
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted"
+                            >Last updated 3 mins ago</small
+                        >
+                    </p>
                 </div>
             </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-6">
-                <!-- small box -->
-                <div class="small-box bg-success">
-                    <div class="inner">
-                        <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-                        <p>Bounce Rate</p>
-                    </div>
-                    <div class="icon">
-                        <i class="ion ion-stats-bars"></i>
-                    </div>
-                    <a href="#" class="small-box-footer"
-                        >More info <i class="fas fa-arrow-circle-right"></i
-                    ></a>
+            <div class="card">
+                <img
+                    src="assets/img/1_001.jpg"
+                    class="card-img-top"
+                    alt="..."
+                    style="height: 400px"
+                />
+                <div class="card-body">
+                    <h5 class="card-title">
+                        รพ.ค่ายวชิราวุธมีความประสงค์จัดซื้อโคมไฟผ่าตัดชนิดโคมคู่แขวนเพดาน
+                    </h5>
+                    <p class="card-text">
+                        รพ.ค่ายวชิราวุธมีความประสงค์จัดซื้อโคมไฟผ่าตัดชนิดโคมคู่แขวนเพดานแบบหลอด
+                        LED พร้อมระบบถ่ายทอกสัญญาณ จำนวน 4 ชุด
+                        เชิญชวนผู้ประกอบการที่มีความสนใจประกวดราคา
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted"
+                            >Last updated 3 mins ago</small
+                        >
+                    </p>
                 </div>
             </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-6">
-                <!-- small box -->
-                <div class="small-box bg-warning">
-                    <div class="inner">
-                        <h3>44</h3>
-
-                        <p>User Registrations</p>
-                    </div>
-                    <div class="icon">
-                        <i class="ion ion-person-add"></i>
-                    </div>
-                    <a href="#" class="small-box-footer"
-                        >More info <i class="fas fa-arrow-circle-right"></i
-                    ></a>
+            <div class="card">
+                <img
+                    src="assets/img/army_wachirawuthospital.png"
+                    class="card-img-top"
+                    alt="..."
+                    style="height: 300px"
+                />
+                <div class="card-body">
+                    <h5 class="card-title">
+                        ประชาสัมพันธ์ทหารกองเกินที่จะเข้ารับการตรวจโรคก่อนการตรวจเลือก
+                        ประจำปี 2566
+                    </h5>
+                    <p class="card-text">
+                        การตรวจโรคก่อนการตรวจเลือกทหารกองเกินเข้ารับราชการทหารกองประจำการ
+                        ประจำปี 2566 ทหารกองเกิน
+                        ซึ่งอยู่ในกำหนดเรียกเข้ารับการตรวจเลือกฯ ในเดือน เม.ย.
+                        66 ผู้ใดที่เห็นว่าตนเองมีโรคหรือสภาพร่างกาย
+                        หรือสภาพจิตใจที่ไม่สามารถรับราชการทหารได้
+                        ให้ไปขอรับการตรวจโรคก่อนการตรวจเลือกทหารกองเกินเข้ารับราชการทหารกองประจำการได้ที่โรงพยาบาลในสังกัดกองทัพบก
+                        กองทัพเรือ และกองทัพอากาศ 26 แห่งทั่วประเทศ
+                        (โรงพยาบาลใดก็ได้)
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted"
+                            >Last updated 3 mins ago</small
+                        >
+                    </p>
                 </div>
             </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-6">
-                <!-- small box -->
-                <div class="small-box bg-danger">
-                    <div class="inner">
-                        <h3>65</h3>
-
-                        <p>Unique Visitors</p>
-                    </div>
-                    <div class="icon">
-                        <i class="ion ion-pie-graph"></i>
-                    </div>
-                    <a href="#" class="small-box-footer"
-                        >More info <i class="fas fa-arrow-circle-right"></i
-                    ></a>
-                </div>
-            </div>
-            <!-- ./col -->
         </div>
-        <!-- /.row -->
     </div>
-    <!-- Main row -->
-</section>
-<!-- /.content -->
+</div>
+
+<br />
+
+<!-- <div class="row">
+  <div class="col-xxl-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Hello Plo</h1>
+        <ngx-profit-card></ngx-profit-card>
+      </div>
+      <div class="col-md-6">
+         <ngx-earning-card></ngx-earning-card>
+      </div>
+    </div>
+
+    <ngx-traffic-reveal-card></ngx-traffic-reveal-card>
+  </div>
+
+  <div class="col-xxl-7">
+    <ngx-ecommerce-charts></ngx-ecommerce-charts>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xxl-9">
+     <ngx-country-orders></ngx-country-orders>
+  </div>
+
+  <div class="col-xxl-3">
+     <ngx-progress-section></ngx-progress-section>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xxl-9">
+     <ngx-ecommerce-visitors-analytics></ngx-ecommerce-visitors-analytics>
+  </div>
+
+  <div class="col-xxl-3">
+     <ngx-user-activity></ngx-user-activity>
+  </div>
+</div> -->

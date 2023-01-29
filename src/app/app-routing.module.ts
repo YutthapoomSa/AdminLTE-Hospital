@@ -1,18 +1,19 @@
 import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
-import {MainComponent} from '@modules/main/main.component';
-import {BlankComponent} from '@pages/blank/blank.component';
-import {LoginComponent} from '@modules/login/login.component';
-import {ProfileComponent} from '@pages/profile/profile.component';
-import {RegisterComponent} from '@modules/register/register.component';
-import {DashboardComponent} from '@pages/dashboard/dashboard.component';
+import {RouterModule, Routes} from '@angular/router';
 import {AuthGuard} from '@guards/auth.guard';
 import {NonAuthGuard} from '@guards/non-auth.guard';
 import {ForgotPasswordComponent} from '@modules/forgot-password/forgot-password.component';
-import {RecoverPasswordComponent} from '@modules/recover-password/recover-password.component';
-import {MainMenuComponent} from '@pages/main-menu/main-menu.component';
-import {SubMenuComponent} from '@pages/main-menu/sub-menu/sub-menu.component';
+import {LoginComponent} from '@modules/login/login.component';
 import {LogoutComponent} from '@modules/logout/logout.component';
+import {MainComponent} from '@modules/main/main.component';
+import {RecoverPasswordComponent} from '@modules/recover-password/recover-password.component';
+import {RegisterComponent} from '@modules/register/register.component';
+import {BlankComponent} from '@pages/blank/blank.component';
+import {DashboardComponent} from '@pages/dashboard/dashboard.component';
+import {FormInputsComponent} from '@pages/form-inputs/form-inputs.component';
+import {FormLayoutsComponent} from '@pages/form-layouts/form-layouts.component';
+import {SubMenuComponent} from '@pages/main-menu/sub-menu/sub-menu.component';
+import {ProfileComponent} from '@pages/profile/profile.component';
 
 const routes: Routes = [
     {
@@ -36,6 +37,14 @@ const routes: Routes = [
             {
                 path: 'sub-menu-2',
                 component: BlankComponent
+            },
+            {
+                path: 'form-layouts',
+                component: FormLayoutsComponent
+            },
+            {
+                path: 'form-inputs',
+                component: FormInputsComponent
             },
             {
                 path: '',

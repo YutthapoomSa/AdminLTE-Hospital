@@ -28,6 +28,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {StoreModule} from '@ngrx/store';
 import {BlankComponent} from '@pages/blank/blank.component';
 import {DashboardComponent} from '@pages/dashboard/dashboard.component';
+import {FormInputsComponent} from '@pages/form-inputs/form-inputs.component';
+import {FormLayoutsComponent} from '@pages/form-layouts/form-layouts.component';
 import {ProfileComponent} from '@pages/profile/profile.component';
 import {InterceptorInterceptor} from '@services/interceptor/interceptor.interceptor';
 import {NgSelect2Module} from 'ng-select2';
@@ -74,7 +76,9 @@ registerLocaleData(localeEn, 'en-EN');
         DropdownComponent,
         SelectComponent,
         PreviewPdfComponent,
-        LogoutComponent
+        LogoutComponent,
+        FormLayoutsComponent,
+        FormInputsComponent
     ],
     imports: [
         BrowserModule,
