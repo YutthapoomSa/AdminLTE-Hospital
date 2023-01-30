@@ -3,17 +3,17 @@ import {RouterModule, Routes} from '@angular/router';
 import {AuthGuard} from '@guards/auth.guard';
 import {NonAuthGuard} from '@guards/non-auth.guard';
 import {ForgotPasswordComponent} from '@modules/forgot-password/forgot-password.component';
-import {LoginComponent} from '@modules/login/login.component';
-import {LogoutComponent} from '@modules/logout/logout.component';
-import {MainComponent} from '@modules/main/main.component';
-import {MenuSidebarComponent} from '@modules/main/menu-sidebar/menu-sidebar.component';
 import {RecoverPasswordComponent} from '@modules/recover-password/recover-password.component';
-import {RegisterComponent} from '@modules/register/register.component';
-import {BlankComponent} from '@pages/blank/blank.component';
-import {DashboardComponent} from '@pages/dashboard/dashboard.component';
+import {MainMenuComponent} from '@pages/main-menu/main-menu.component';
 import {SubMenuComponent} from '@pages/main-menu/sub-menu/sub-menu.component';
+import {LogoutComponent} from '@modules/logout/logout.component';
+import { LoginComponent } from '@modules/login/login.component';
+import { MainComponent } from '@modules/main/main.component';
+import { RegisterComponent } from '@modules/register/register.component';
+import { BlankComponent } from '@pages/blank/blank.component';
+import { DashboardComponent } from '@pages/dashboard/dashboard.component';
 import { PersonnelOverviewComponent } from '@pages/personnel-overview/personnel-overview.component';
-import {ProfileComponent} from '@pages/profile/profile.component';
+import { ProfileComponent } from '@pages/profile/profile.component';
 
 const routes: Routes = [
     {
@@ -37,10 +37,6 @@ const routes: Routes = [
             {
                 path: 'sub-menu-2',
                 component: BlankComponent
-            },
-            {
-                path: 'menu-sidebar',
-                component: MenuSidebarComponent
             },
             {
                 path: '',

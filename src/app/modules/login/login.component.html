@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="w-full max-w-md px-8 pt-6 pb-8">
     <img
         src="assets/img/logo.png"
@@ -9,35 +10,54 @@
             ><b>โรงพยาบาลค่ายวชิราวุธ</b></a
         >
         <div class="text-center text-xs my-3 text-gray-400">ยินดีต้อนรับ</div>
+=======
+<div id="grad" class="card card-outline card-primary">
+    <div class="card-header text-center">
+        <img
+            src="assets/img/logo.png"
+            style="
+                display: flex;
+                justify-content: center;
+                margin: auto;
+                height: 100px;
+                width: 80px;
+            "
+        />
+        <h2 id="title" class="title">โรงพยาบาลค่ายวชิราวุธ</h2>
+>>>>>>> 1e87b786f608efd4a17dba73de93a0b71400103d
     </div>
+
     <div class="card-body">
         <p class="login-box-msg">ลงชื่อเข้าใช้งาน</p>
 
-        <div class="input-group mb-3">
-            <input
-                type="text"
-                class="form-control"
-                placeholder="ชื่อผู้ใช้"
-                [(ngModel)]="reqLogin.username"
-            />
-            <div class="input-group-append">
-                <div class="input-group-text">
-                    <span class="fas fa-envelope"></span>
+        <div class="container">
+            <div class="input-group mb-3">
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="ชื่อผู้ใช้"
+                    [(ngModel)]="reqLogin.username"
+                />
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-address-book"></span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="input-group mb-3">
-            <input
-                type="password"
-                class="form-control"
-                placeholder="รหัสผ่าน"
-                [(ngModel)]="reqLogin.password"
-            />
-            <div class="input-group-append">
-                <div class="input-group-text">
-                    <span class="fas fa-lock"></span>
+            <div class="input-group mb-3">
+                <input
+                    type="password"
+                    class="form-control"
+                    placeholder="รหัสผ่าน"
+                    [(ngModel)]="reqLogin.password"
+                />
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-lock"></span>
+                    </div>
                 </div>
             </div>
+<<<<<<< HEAD
         </div>
 
         <!-- <div class="flex justify-between">
@@ -84,6 +104,26 @@
             </div>
 
             <!-- /.col -->
+=======
+            <div class="input-group mb-3">
+                <!-- /.col -->
+                <div class="col-12" style="align-items: center">
+                    <app-button
+                        [disabled]="isBtnDisabled()"
+                        [type]="'submit'"
+                        [block]="true"
+                        (click)="login()"
+                        [loading]="isAuthLoading"
+                    >
+                        เข้าสู่ระบบ
+                    </app-button>
+                </div>
+                <!-- /.col -->
+            </div>
+            <a class="forgot-password caption-2" routerLink="../forgot-password"
+                >Forgot Password</a
+            >
+>>>>>>> 1e87b786f608efd4a17dba73de93a0b71400103d
         </div>
     </div>
     <!-- /.login-card-body -->

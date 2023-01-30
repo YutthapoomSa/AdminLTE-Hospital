@@ -33,8 +33,8 @@ export class LoginComponent implements OnInit, OnDestroy {
     public reqLogin: reqLogin = {
         // username: '',
         // password: ''
-        username: 'admin1',
-        password: 'admin1'
+        username: 'admin',
+        password: 'admin'
     };
 
     constructor(
