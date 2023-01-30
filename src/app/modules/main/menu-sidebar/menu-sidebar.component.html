@@ -3,23 +3,25 @@
     <img
         src="assets/img/logo.png"
         alt="AdminLTE Logo"
-        class="brand-image elevation-3"
+        class="brand-image elevation"
         style="opacity: 1.8"
     />
-    <span class="brand-text font-weight-lighter text-white">โรงพยาบาลวชิราวุธ</span>
+    <span class="brand-text font-weight-lighter text-white"
+        >โรงพยาบาลวชิราวุธ</span
+    >
 </a>
 
 <!-- Sidebar -->
 <div class="sidebar">
     <!-- Sidebar Menu -->
-    <nav class="mt-2" style="overflow-y: hidden">
+    <nav class="mt-2 sidebar-divider my-3" style="overflow-y: hidden">
         <ul
             class="nav nav-pills nav-sidebar flex-column"
             data-widget="treeview"
             role="menu"
             data-accordion="false"
         >
-            <ng-container *ngFor="let item of menu">
+            <ng-container  ner *ngFor="let item of menu">
                 <app-menu-item
                     *ngIf="item.isShow"
                     [menuItem]="item"

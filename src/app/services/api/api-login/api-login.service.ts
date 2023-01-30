@@ -7,7 +7,7 @@ import {reqLogin, resLogin} from './interface/api-login';
 @Injectable({
     providedIn: 'root'
 })
-export class ApiLoginService {
+export class  ApiLoginService {
     constructor(private http: HttpClient) {}
     usersLogin(body: reqLogin): Observable<resLogin> {
         return this.http.post<resLogin>(`${environment.Url}/users/login`, body);

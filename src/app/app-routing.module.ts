@@ -14,6 +14,8 @@ import { BlankComponent } from '@pages/blank/blank.component';
 import { DashboardComponent } from '@pages/dashboard/dashboard.component';
 import { PersonnelOverviewComponent } from '@pages/personnel-overview/personnel-overview.component';
 import { ProfileComponent } from '@pages/profile/profile.component';
+import { FormLayoutsComponent } from '@pages/form-layouts/form-layouts.component';
+import { FormInputsComponent } from '@pages/form-inputs/form-inputs.component';
 
 const routes: Routes = [
     {
@@ -43,8 +45,12 @@ const routes: Routes = [
                 component: DashboardComponent
             },
             {
-                path: 'personnel-overview',
-                component: PersonnelOverviewComponent
+                path: 'form-inputs',
+                component: FormInputsComponent
+            },
+            {
+                path: 'form-layouts',
+                component: FormLayoutsComponent
             },
             {
                 path: 'profile',

@@ -67,18 +67,19 @@ export class MenuSidebarComponent implements OnInit {
             {
                 name: 'Dashboard',
                 isShow: this.checkRoleUser(),
-                icon: 'fa-solid fa-file-signature',
+                icon: 'fas fa-solid fa-file-signature',
                 children: [
                     {
-                        name: 'บุคคลากร',
+                        name: 'บุคลากร',
                         path: ['/form-layouts'],
                         isShow: true,
+                        icon: 'fas fa-users'
                     },
                     {
                         name: 'โรงพยาบาล',
                         path: ['/form-inputs'],
                         isShow: true,
-                        icon: 'fa-solid fa-file-export'
+                        icon: 'fas fa-hospitals'
                     }
                 ]
             },
@@ -117,14 +118,13 @@ export class MenuSidebarComponent implements OnInit {
                 name: 'จัดการบัญชีผู้ใช้',
                 path: ['/profile'],
                 isShow: this.checkRoleUser(),
-                path: ['/manage-accounts'],
-                icon: 'fa-solid settings-2-outline'
+                icon: 'fas fa-user-gear'
             },
             {
                 name: 'ออกจากระบบ',
                 path: ['/logout'],
                 isShow: true,
-                icon: 'fa-solid fa-right-from-bracket'
+                icon: 'fas fa-right-from-bracket'
             }
         ];
     }
