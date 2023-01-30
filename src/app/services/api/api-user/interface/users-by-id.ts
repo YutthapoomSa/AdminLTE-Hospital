@@ -7,6 +7,7 @@ export interface ResUserById {
 export interface ResUserByIdData {
   id: number
   email: string
+  username: string
   firstName: string
   lastName: string
   role: string

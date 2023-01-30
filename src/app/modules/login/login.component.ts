@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     public isAuthLoading = false;
     public isGoogleLoading = false;
     public isFacebookLoading = false;
-    public isUsername = true;
+    public isusername = true;
     public textColor = '';
     public reqLogin: reqLogin = {
         // username: '',

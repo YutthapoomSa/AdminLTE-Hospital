@@ -5,7 +5,8 @@ import {Component, Input, OnInit} from '@angular/core';
     styleUrls: ['./preview-pdf.component.scss']
 })
 export class PreviewPdfComponent implements OnInit {
-    public pdfSrc = 'https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf';
+    public pdfSrc =
+        'https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf';
     constructor() {}
 
     ngOnInit() {}

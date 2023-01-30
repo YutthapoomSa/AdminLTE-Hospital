@@ -1,5 +1,6 @@
 export interface ReqUsersRegister {
     email: string;
+    username: string;
     password: string;
     firstName: string;
     lastName: string;
@@ -18,7 +19,7 @@ export interface ResUsersRegister {
 export interface ResUsersRegisterData {
     id: number;
     email: string;
-    userName: string;
+    username: string;
     firstName: string;
     lastName: string;
     role: ResUsersRegisterDataRole;

@@ -1,17 +1,14 @@
-<br />
-<div class="card card-outline card-primary">
-    <div class="card-header text-center">
-        <img
-            src="assets/img/logo.png"
-            style="
-                display: flex;
-                justify-content: center;
-                margin: auto;
-                height: 100px;
-                width: 80px;
-            "
-        />
-        <a [routerLink]="['/']" class="h4"><b>โรงพยาบาลวชิราวุธ</b></a>
+<div class="w-full max-w-md px-8 pt-6 pb-8">
+    <img
+        src="assets/img/logo.png"
+        class="center"
+        style="display: flex; justify-content: center; margin: auto"
+    />
+    <div class="mt-10 mb-7 card-header text-center">
+        <a [routerLink]="['/']" class="h4 mt-10 mb-7"
+            ><b>โรงพยาบาลค่ายวชิราวุธ</b></a
+        >
+        <div class="text-center text-xs my-3 text-gray-400">ยินดีต้อนรับ</div>
     </div>
     <div class="card-body">
         <p class="login-box-msg">ลงชื่อเข้าใช้งาน</p>
@@ -42,10 +39,39 @@
                 </div>
             </div>
         </div>
+
+        <!-- <div class="flex justify-between">
+            <label class="inline-flex items-center mb-6"
+                ><input
+                    type="checkbox"
+                    name="memorize"
+                    class="
+                        form-checkbox
+                        h-5
+                        w-5
+                        text-primaryFS-500
+                        rounded-md
+                        outline-none
+                        ring-0
+                        shadow-none
+                        cursor-pointer
+                    "
+                /><span class="ml-2 text-gray-700 dark:text-gray-200 text-sm"
+                    >จำรหัสผ่าน</span
+                ></label
+            >
+            <div>
+                <a
+                    class="text-gray-700 dark:text-gray-200 text-sm"
+                    href="/forget"
+                    >ลืมรหัสผ่าน?</a
+                >
+            </div>
+        </div> -->
+
         <div class="row">
-            <div class="col-7"></div>
             <!-- /.col -->
-            <div class="col-5">
+            <div class="col-12" style="align-items: center">
                 <app-button
                     [disabled]="isBtnDisabled()"
                     [type]="'submit'"
@@ -56,6 +82,7 @@
                     เข้าสู่ระบบ
                 </app-button>
             </div>
+
             <!-- /.col -->
         </div>
     </div>

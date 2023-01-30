@@ -1,18 +1,23 @@
-<a (click)="handleMainMenuAction()" class="nav-link" [ngClass]="{active: isMainActive || isOneOfChildrenActive}"
-  *ngIf="menuItem.isShow">
-  <i class="nav-icon {{menuItem.icon}}"></i>
-  <p class="nav-pills">{{ menuItem.name }}</p>
-  <i *ngIf="isExpandable && menuItem.children.length > 0" class="right fas fa-angle-left"></i>
+<a
+    (click)="handleMainMenuAction()"
+    class="nav-link"
+    [ngClass]="{active: isMainActive || isOneOfChildrenActive}"
+    *ngIf="menuItem.isShow"
+>
+    <i class="nav-icon {{ menuItem.icon }}"></i>
+    <p class="nav-pills">{{ menuItem.name }}</p>
+    <i
+        *ngIf="isExpandable && menuItem.children.length > 0"
+        class="right fas fa-angle-left"
+    ></i>
 </a>
 <ul class="nav nav-treeview" *ngFor="let item of menuItem.children">
-
-  <li class="nav-item" *ngIf="item.isShow">
-    <!-- <a [routerLink]="item.path" [routerLinkActive]="'active'" class="nav-link"> -->
-    <a [routerLink]="item.path" class="nav-link">
-      &nbsp;
-      <i class="nav-icon {{item.icon}}"></i>
-      <p>{{ item.name }}</p>
-    </a>
-  </li>
-
+    <li class="nav-item" *ngIf="item.isShow">
+        <!-- <a [routerLink]="item.path" [routerLinkActive]="'active'" class="nav-link"> -->
+        <a [routerLink]="item.path" class="nav-link">
+            &nbsp;
+            <i class="nav-icon {{ item.icon }}"></i>
+            <p>{{ item.name }}</p>
+        </a>
+    </li>
 </ul>

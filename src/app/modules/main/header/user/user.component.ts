@@ -1,10 +1,9 @@
-import {Component, OnInit} from '@angular/core';
-import {ApiLoginService} from '@services/api/api-login/api-login.service';
-import {userProfile} from '@services/api/api-user/interface/api-user';
-import {AppService} from '@services/app.service';
-import {LocalService} from '@services/local.service';
+import { Component, OnInit } from '@angular/core';
+import { ApiLoginService } from '@services/api/api-login/api-login.service';
+import { userProfile } from '@services/api/api-user/interface/api-user';
+import { AppService } from '@services/app.service';
+import { LocalService } from '@services/local.service';
 import dayjs from 'dayjs';
-import Swal from 'sweetalert2';
 
 @Component({
     selector: 'app-user',

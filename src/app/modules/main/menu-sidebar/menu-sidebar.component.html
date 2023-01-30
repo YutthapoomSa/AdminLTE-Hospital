@@ -1,13 +1,18 @@
 <!-- Brand Logo -->
 <a [routerLink]="['/']" class="brand-link">
-  <img src="assets/img/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8;" />
-  <span class="brand-text font-weight-light">โรงพยาบาลวชิราวุธ</span>
+    <img
+        src="assets/img/logo.png"
+        alt="Wachirawut Logo"
+        class="brand-image"
+        style="opacity: 1.8"
+    />
+    <p class="brand-text font-weight-light">โรงพยาบาลค่ายวชิราวุธ</p>
 </a>
 
 <!-- Sidebar -->
 <div class="sidebar">
-  <!-- Sidebar user (optional) -->
-  <!-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+    <!-- Sidebar user (optional) -->
+    <!-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
     <div class="image">
       <img [src]="user.picture || 'assets/img/default-profile.png'" class="img-circle elevation-2" alt="User Image" />
     </div>
@@ -18,13 +23,20 @@
     </div>
   </div> -->
 
-  <!-- Sidebar Menu -->
-  <nav class="mt-2" style="overflow-y: hidden">
-    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-      <ng-container *ngFor="let item of menu">
-        <app-menu-item *ngIf="item.isShow" [menuItem]="item"></app-menu-item>
-      </ng-container>
-
-    </ul>
-  </nav>
+    <!-- Sidebar Menu -->
+    <nav class="mt-2" style="overflow-y: hidden">
+        <ul
+            class="nav nav-pills nav-sidebar flex-column"
+            data-widget="treeview"
+            role="menu"
+            data-accordion="false"
+        >
+            <ng-container *ngFor="let item of menu">
+                <app-menu-item
+                    *ngIf="item.isShow"
+                    [menuItem]="item"
+                ></app-menu-item>
+            </ng-container>
+        </ul>
+    </nav>
 </div>
