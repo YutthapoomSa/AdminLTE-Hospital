@@ -1,5 +1,5 @@
 <!-- Brand Logo -->
-<a [routerLink]="['/']" class="brand-link">
+<a class="brand-link">
     <img
         src="assets/img/logo.png"
         alt="AdminLTE Logo"
@@ -21,7 +21,7 @@
             role="menu"
             data-accordion="false"
         >
-            <ng-container  ner *ngFor="let item of menu">
+            <ng-container ner *ngFor="let item of menu">
                 <app-menu-item
                     *ngIf="item.isShow"
                     [menuItem]="item"
