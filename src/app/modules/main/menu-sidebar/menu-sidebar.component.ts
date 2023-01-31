@@ -117,7 +117,7 @@ export class MenuSidebarComponent implements OnInit {
             //     icon: 'fa-solid fa-folder-tree'
             // },
             {
-                name: 'รายงานสั่งซื้อสินค้า',
+                name: 'รายการสั่งซื้อ',
                 isShow: this.checkRoleUser(),
                 icon: 'fas fa-solid fa-file-signature',
                 children: [
