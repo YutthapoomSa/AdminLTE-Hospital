@@ -69,20 +69,20 @@ export class MenuSidebarComponent implements OnInit {
             {
                 name: 'รายงานข้อมูลและสถิติ',
                 isShow: this.checkRoleUser(),
-                icon: 'fas fa-solid fa-file-signature',
+                icon: 'fas fa-chart-pie',
                 children: [
-                    
+
                     {
                         name: 'ภาพรวมโรงพยาบาล',
                         path: ['/form-inputs'],
                         isShow: true,
-                        icon: 'fas fa-hospitals'
+                        icon: 'fas fa-circle'
                     },
                     {
                         name: 'ภาพรวมบุคลากร',
                         path: ['/form-layouts'],
                         isShow: true,
-                        icon: 'fas fa-users'
+                        icon: 'fas fa-circle'
                     }
                 ]
             },
@@ -121,32 +121,38 @@ export class MenuSidebarComponent implements OnInit {
                 isShow: this.checkRoleUser(),
                 icon: 'fas fa-solid fa-file-signature',
                 children: [
-                    
+
                     {
                         name: 'ใบสั่งซื้อ',
                         path: ['/form-inputs'],
                         isShow: true,
-                        icon: 'fas fa-hospitals'
+                        icon: 'fas fa-circle'
                     },
                     {
                         name: 'ใบขอซื้อ',
                         path: ['/form-layouts'],
                         isShow: true,
-                        icon: 'fas fa-users'
+                        icon: 'fas fa-circle'
                     }
                 ]
             },
             {
+              name: 'รายงานสภาพอากาศ',
+              path: ['/profile'],
+              isShow: this.checkRoleUser(),
+              icon: 'fas fa-cloud-sun-rain'
+          },
+            {
                 name: 'จัดการบัญชีผู้ใช้',
                 path: ['/profile'],
                 isShow: this.checkRoleUser(),
-                icon: 'fas fa-user-gear'
+                icon: 'fas fa-user-circle'
             },
             {
                 name: 'ออกจากระบบ',
                 path: ['/logout'],
                 isShow: true,
-                icon: 'fas fa-right-from-bracket'
+                icon: 'fas fa-sign-out-alt'
             }
         ];
     }
