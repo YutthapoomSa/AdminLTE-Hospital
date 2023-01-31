@@ -1,48 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap');
 
-* {
+  * {
     font-family: 'Prompt', sans-serif;
-}
+  }
+
 .card-primary.card-outline {
-    border-top: 3px solid #1b7e41 !important;
+    border: 1px ;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-#grad {
-    background: rgb(
-        0,
-        255,
-        115
-    ); /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(
-        left,
-        rgba(255, 0, 0, 0),
-        rgb(10, 124, 67)
-    ); /*Safari 5.1-6*/
-    background: -o-linear-gradient(
-        right,
-        rgba(255, 0, 0, 0),
-        rgb(10, 124, 67)
-    ); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(
-        right,
-        rgba(255, 0, 0, 0),
-        rgb(10, 124, 67)
-    ); /*Fx 3.6-15*/
-    background: linear-gradient(
-        to right,
-        rgba(255, 0, 0, 0),
-        rgb(10, 124, 67)
-    ); /*Standard*/
-}
+.card {
 
-.center {
     transition: 0.3s;
-    width: 60%;
-    height: 500px;
+    width: auto;
+    height: auto;
     border-radius: 25px 25px 25px 25px;
-    text-align: center;
-    align-items: center;
-    padding-top: 5%;
+    padding-top: 8%;
     display: flex;
     display: block;
     margin: auto;
@@ -50,26 +23,137 @@
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
+    padding-bottom: 8%;
+
+
 }
 
-.ng-container {
-    display: block;
-    margin: auto;
-    justify-content: center;
-}
+  .label {
+      // padding: 12px; // 12px 12px 0;
+      display: inline-block;
+      padding-left: 42px;
+      font-size: 13px;
+      color: rgb(51, 51, 51);
+      padding-top: 10px;
+  }
 
-label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-    padding-left: 75px;
-}
-
-input[type='text'],
-select,
-textarea {
+  .input-group{
+    float: left;
     width: 60%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
+    font-size: 16px;
+    // padding-top: 10px;
+    padding-left: 5px;
+  }
+  .input-group2{
+    float: left;
+    width: 62%;
+    font-size: 16px;
+    // padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .row{
+    padding-bottom: 10px;
+  }
+
+  input[type='text'],
+  select,
+  textarea {
+      width: 70%;
+      // padding: 12px;
+      border: 1px solid #ccc;
+      box-shadow: #4f4f4f 5px 8px 10px -13px;
+      border-radius: 100px;
+      resize: vertical;
+      align-items: flex-start;
+      text-align: left;
+      justify-items: left;
+  }
+
+  input[type='password'],
+  select,
+  textarea {
+      width: 100%;
+      // padding: 12px;
+      border: 1px solid #ccc;
+      box-shadow: #4f4f4f 5px 8px 10px -13px;
+      border-radius: 100px;
+      resize: vertical;
+      align-items: flex-start;
+      text-align: left;
+      justify-items: left;
+  }
+
+  .col-12{
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+
+ .title{
+ padding-top: 15px;
+ font-size: 28px;
+ }
+
+b{
+  font-size: 12px ;
 }
+
+
+ // Small devices (landscape phones, 576px and up)
+ @media (max-width: 300px) {
+  .card{
+    width: auto;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 8%;
+  }
+
+  .label{
+    display: inline-block;
+    text-align: left;
+    align-items: flex-start;
+    // padding-bottom: 45%;
+    // padding-top: 25px;
+  }
+
+  .input-group{
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    font-size: 16px;
+    // padding-top: 10px;
+    padding-left: 25px;
+  }
+
+  .input-group2{
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    font-size: 16px;
+    // padding-top: 10px;
+    padding-left: 25px;
+  }
+ }
+  // Medium devices (tablets, 768px and large phone)
+  @media only screen and (min-width:301px) and  (max-width: 768px) {
+
+    .label {
+      // padding: 12px; // 12px 12px 0;
+      display: inline-block;
+      padding-left: 37px;
+
+  }
+  }
+
+    // Large devices (large tablet)
+  @media only screen and (min-width:769px) and (max-width: 992px) {}
+
+  @media  only screen and (min-width:993px) and (max-width: 2400px){}

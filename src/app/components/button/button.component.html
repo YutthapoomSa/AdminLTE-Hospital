@@ -1,15 +1,15 @@
 <button
     [type]="type"
-    class="btn btn-{{ color }} custom-btn"
+    class="btn btn-{{ color }} custom-btn "
     [ngClass]="{'btn-block': block}"
     [disabled]="disabled || loading"
 >
     <i *ngIf="!!icon" class="mr-2" [ngClass]="icons[icon]"></i>
     <ng-content></ng-content>
-    <span
+    <!-- <span
         *ngIf="loading"
         class="spinner-border spinner-border-sm ml-2"
         role="status"
         aria-hidden="true"
-    ></span>
+    ></span> -->
 </button>
