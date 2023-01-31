@@ -21,7 +21,7 @@ export class ApiMenuService {
     }
 
     menuUpdate(body: ReqUpdateMenu, menuId: number): Observable<ResUpdateMenu> {
-        return this.http.post<ResUpdateMenu>(
+        return this.http.patch<ResUpdateMenu>(
             `${environment.Url}/menu/updateMenu/${menuId}`,
             body
         );

@@ -1,12 +1,14 @@
 export class ReqCreateMenu {
     menuName: string;
-    iframe: string;
+    iframeMenu: string;
+    submenuId: number;
 }
 
 export class ResCreateMenuData {
     menuId: number;
     menuName: string;
-    iframe: string;
+    iframeMenu: string;
+    submenuId: number;
 }
 
 export class ResCreateMenu {

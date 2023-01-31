@@ -1,12 +1,14 @@
 export interface ReqUpdateMenu {
     menuName: string;
-    iframe: string;
+    iframeMenu: string;
+    submenuId: number;
 }
 
 export class ResUpdateMenuData {
     menuId: number;
     menuName: string;
-    iframe: string;
+    iframeMenu: string;
+    submenuId: number;
 }
 
 export class ResUpdateMenu {
