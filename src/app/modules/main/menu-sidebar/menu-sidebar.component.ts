@@ -10,7 +10,8 @@ const BASE_CLASSES = 'main-sidebar elevation-4';
 @Component({
     selector: 'app-menu-sidebar',
     templateUrl: './menu-sidebar.component.html',
-    styleUrls: ['./menu-sidebar.component.scss']
+    styleUrls: ['./menu-sidebar.component.scss'],
+    styles:['text {color:aqua;}']
 })
 export class MenuSidebarComponent implements OnInit {
     @HostBinding('class') classes: string = BASE_CLASSES;
@@ -61,25 +62,27 @@ export class MenuSidebarComponent implements OnInit {
                 name: 'ข่าวประชาสัมพันธ์',
                 path: ['/dashboard'],
                 icon: 'fas fa-newspaper',
+                class: 'text',
                 isShow: true
             },
 
             {
-                name: 'Dashboard',
+                name: 'รายงานข้อมูลและสถิติ',
                 isShow: this.checkRoleUser(),
                 icon: 'fas fa-solid fa-file-signature',
                 children: [
+                    
                     {
-                        name: 'บุคลากร',
-                        path: ['/form-layouts'],
-                        isShow: true,
-                        icon: 'fas fa-users'
-                    },
-                    {
-                        name: 'โรงพยาบาล',
+                        name: 'ภาพรวมโรงพยาบาล',
                         path: ['/form-inputs'],
                         isShow: true,
                         icon: 'fas fa-hospitals'
+                    },
+                    {
+                        name: 'ภาพรวมบุคลากร',
+                        path: ['/form-layouts'],
+                        isShow: true,
+                        icon: 'fas fa-users'
                     }
                 ]
             },
@@ -113,7 +116,26 @@ export class MenuSidebarComponent implements OnInit {
             //     isShow: this.checkRoleUser(),
             //     icon: 'fa-solid fa-folder-tree'
             // },
-
+            {
+                name: 'รายงานสั่งซื้อสินค้า',
+                isShow: this.checkRoleUser(),
+                icon: 'fas fa-solid fa-file-signature',
+                children: [
+                    
+                    {
+                        name: 'ใบสั่งซื้อ',
+                        path: ['/form-inputs'],
+                        isShow: true,
+                        icon: 'fas fa-hospitals'
+                    },
+                    {
+                        name: 'ใบขอซื้อ',
+                        path: ['/form-layouts'],
+                        isShow: true,
+                        icon: 'fas fa-users'
+                    }
+                ]
+            },
             {
                 name: 'จัดการบัญชีผู้ใช้',
                 path: ['/profile'],

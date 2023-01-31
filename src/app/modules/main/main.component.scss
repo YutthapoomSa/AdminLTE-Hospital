@@ -2,6 +2,25 @@
   display: block;
 }
 
+.text {
+  color: aqua;
+}
+
+.sidebar-light-teal {
+  background-color: white !important;
+  color: crimson !important;
+}
+
 .content-wrapper > *:first-child {
   display: block;
 }
+#sidebar-menu, #sidebar-menu ul, #header ul, .dock-menu .e-menu-wrapper, .dock-menu.e-menu-wrapper, .dock-menu.e-menu-wrapper ul > *, .dock-menu .e-menu-wrapper ul > * { 
+  background-color: red; 
+  color: #fff; 
+  overflow: hidden; 
+} 
+
+//Change the color for Menu item 
+.dock-menu .e-menu-wrapper ul .e-menu-item .e-caret, #header .search-icon, #sidebar-menu .action-btn, #header .e-menu-item .e-caret, .dock-menu .e-menu-wrapper ul .e-menu-item { 
+  color: #fff !important; 
+} 

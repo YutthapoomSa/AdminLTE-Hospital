@@ -6,23 +6,21 @@
         class="brand-image elevation"
         style="opacity: 1.8"
     />
-    <span class="brand-text font-weight-lighter text-white"
-        >โรงพยาบาลวชิราวุธ</span
-    >
+    <span class="brand-text font-weight-lighter">โรงพยาบาลวชิราวุธ</span >
 </a>
 
 <!-- Sidebar -->
 <div class="sidebar">
     <!-- Sidebar Menu -->
     <nav class="mt-2 sidebar-divider my-3" style="overflow-y: hidden">
-        <ul
+        <ul 
             class="nav nav-pills nav-sidebar flex-column"
             data-widget="treeview"
             role="menu"
-            data-accordion="false"
-        >
-            <ng-container ner *ngFor="let item of menu">
-                <app-menu-item
+            data-accordion="false" >
+       
+            <ng-container  ner *ngFor="let item of menu">
+                <app-menu-item 
                     *ngIf="item.isShow"
                     [menuItem]="item"
                 ></app-menu-item>
