@@ -10,7 +10,6 @@
 }
 
 .card {
-
     transition: 0.3s;
     width: auto;
     height: auto;
@@ -24,9 +23,26 @@
     text-align: center;
     flex-wrap: wrap;
     padding-bottom: 8%;
-
-
 }
+
+//Images
+  .logoimg {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 70px;
+    width: 55px;
+  }
+
+  //TEXT
+  .textlogin {
+    font-size: 20px;
+  }
+
+  .title{
+    padding-top: 15px;
+    font-size: 28px;
+  }
 
   .label {
       // padding: 12px; // 12px 12px 0;
@@ -39,14 +55,15 @@
 
   .input-group{
     float: left;
-    width: 60%;
+    width: 80%;
     font-size: 16px;
     // padding-top: 10px;
     padding-left: 5px;
   }
+
   .input-group2{
     float: left;
-    width: 62%;
+    width: 80%;
     font-size: 16px;
     // padding-top: 10px;
     padding-left: 10px;
@@ -56,11 +73,18 @@
     padding-bottom: 10px;
   }
 
+  .form-group{ 
+    margin-left: 30px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
   input[type='text'],
   select,
   textarea {
-      width: 70%;
-      // padding: 12px;
+      font-size: 18px;
+      width: 90%;
       border: 1px solid #ccc;
       box-shadow: #4f4f4f 5px 8px 10px -13px;
       border-radius: 100px;
@@ -73,8 +97,8 @@
   input[type='password'],
   select,
   textarea {
-      width: 100%;
-      // padding: 12px;
+      font-size: 18px;
+      width: 90%;
       border: 1px solid #ccc;
       box-shadow: #4f4f4f 5px 8px 10px -13px;
       border-radius: 100px;
@@ -95,19 +119,89 @@
     padding-top: 10px;
   }
 
-
- .title{
- padding-top: 15px;
- font-size: 28px;
- }
-
 b{
   font-size: 12px ;
 }
 
 
+@media (min-width: 2560px) {
+//Images
+.logoimg {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 70px;
+  width: 55px;
+}
+
+}
+
+@media (min-width: 1920px) {
+//Images
+.logoimg {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 70px;
+  width: 55px;
+}
+
+//TEXT
+
+}
+
+@media (min-width: 1024px) {
+//Images
+.logoimg {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 60px;
+  width: 45px;
+}
+//TEXT
+
+}
+
+@media (min-width: 768px) {
+//Images
+.logoimg {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 55px;
+  width: 40px;
+}
+//TEXT
+
+}
+
+@media (min-width: 425px) {
+//Images
+.logoimg {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 55px;
+  width: 40px;
+}
+//TEXT
+
+
+}
+
  // Small devices (landscape phones, 576px and up)
- @media (max-width: 300px) {
+ @media (max-width: 375px) {
+  //Images
+.logoimg {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 55px;
+  width: 40px;
+}
+//TEXT
+
   .card{
     width: auto;
     height: auto;
@@ -115,45 +209,4 @@ b{
     align-items: center;
     padding-bottom: 8%;
   }
-
-  .label{
-    display: inline-block;
-    text-align: left;
-    align-items: flex-start;
-    // padding-bottom: 45%;
-    // padding-top: 25px;
-  }
-
-  .input-group{
-    align-items: center;
-    justify-items: center;
-    width: 90%;
-    font-size: 16px;
-    // padding-top: 10px;
-    padding-left: 25px;
-  }
-
-  .input-group2{
-    align-items: center;
-    justify-items: center;
-    width: 90%;
-    font-size: 16px;
-    // padding-top: 10px;
-    padding-left: 25px;
-  }
  }
-  // Medium devices (tablets, 768px and large phone)
-  @media only screen and (min-width:301px) and  (max-width: 768px) {
-
-    .label {
-      // padding: 12px; // 12px 12px 0;
-      display: inline-block;
-      padding-left: 37px;
-
-  }
-  }
-
-    // Large devices (large tablet)
-  @media only screen and (min-width:769px) and (max-width: 992px) {}
-
-  @media  only screen and (min-width:993px) and (max-width: 2400px){}

@@ -3,62 +3,35 @@
     <div class="header text-center">
         <img
             src="assets/img/logo.png"
-            style="
-                display: flex;
-                justify-content: center;
-                margin: auto;
-                height: 60px;
-                width: 50px;
-            "
+            class="logoimg"
         />
-        <h2 id="title" class="title">โรงพยาบาลค่ายวชิราวุธ</h2>
+        <!-- <h2 id="title" class="title">โรงพยาบาลค่ายวชิราวุธ</h2> -->
     </div>
+    <p></p>
+        <p class="textlogin">ลงชื่อเข้าใช้งาน</p>
 
-        <p class="login">ลงชื่อเข้าใช้งาน</p>
-
-        <div class="container">
-            <div class="row">
-              <div class="col-25">
-                <label class="label" for="input-username">Username:</label>
-              </div>
-
-              <div class="input-group">
-                  <input
-                      type="text"
-                      class="form-control"
-                      placeholder="ชื่อผู้ใช้"
-                      [(ngModel)]="reqLogin.username"
-                  />
-
-                <!-- <div class="input-group-append">
-                    <div class="input-group-text">
-                        <span class="fas fa-thin fa-user"></span>
-                    </div>
-                </div> -->
-
-              </div>
+        <form action="#" class="signin-form">
+            <div class="form-group mt-3">
+                <input
+                type="text"
+                class="form-control"
+                style="font-size: 14px;"
+                placeholder="ชื่อผู้ใช้"
+                [(ngModel)]="reqLogin.username"/>
             </div>
-
-            <div class="row">
-              <div class="col-25">
-                  <label class="label" for="input-password">Password:</label>
-              </div>
-                <div class="input-group2 ">
+            <div class="form-group">
                     <input
                         type="password"
                         class="form-control"
+                        style="font-size: 14px;"
                         placeholder="รหัสผ่าน"
                         [(ngModel)]="reqLogin.password"
                     />
-
-                    <!-- <div class="input-group-append">
-                        <div class="input-group-text">
-                            <span class="fas fa-lock"></span>
-                        </div>
-                    </div> -->
-                </div>
             </div>
+    </form>
 
+        <div  style="align-items: center">
+    
             <a class="forgot-password" routerLink="../forgot-password"
                 ><b>Forgot Password</b></a
             >
@@ -78,7 +51,6 @@
                 </div>
                 <!-- /.col -->
             <!-- </div> -->
-
         </div>
     </div>
     <!-- /.login-card-body -->

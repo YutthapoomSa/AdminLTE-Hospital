@@ -2,14 +2,13 @@
     display: block;
 }
 .custom-btn{
-  background: #3C79F5;
+    background: #3C79F5;
     border-radius: 999px;
     box-shadow: #3C79F5 0 10px 20px -10px;
     box-sizing: border-box;
     color: #FFFFFF;
     cursor: pointer;
     font-size: 16px;
-    font-weight: 400;
     line-height: 18px;
     opacity: 1;
     outline: 0 solid transparent;
@@ -20,15 +19,12 @@
     width: 152%;
     word-break: break-word;
     border: 0;
-
 }
 
 .btn:hover{
   background: #6e6ee1;
   box-shadow: 0 8px 12px 0 rgba(73, 73, 73, 0.371),0 8px 20px 0 rgb(255, 255, 255);
-  font-size: 18px;
-  font-weight: 400;
-
+  font-size: 16px;
 }
 
 .spinner-border{
