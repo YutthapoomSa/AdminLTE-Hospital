@@ -75,13 +75,13 @@ export class MenuSidebarComponent implements OnInit {
                         name: 'ภาพรวมโรงพยาบาล',
                         path: ['/form-inputs'],
                         isShow: true,
-                        icon: 'fas fa-circle'
+                        icon: 'far fa-circle'
                     },
                     {
                         name: 'ภาพรวมบุคลากร',
                         path: ['/form-layouts'],
                         isShow: true,
-                        icon: 'fas fa-circle'
+                        icon: 'far fa-circle'
                     }
                 ]
             },
@@ -124,17 +124,17 @@ export class MenuSidebarComponent implements OnInit {
                         name: 'ใบสั่งซื้อ',
                         path: ['/purchase-order'],
                         isShow: true,
-                        icon: 'fas fa-circle'
+                        icon: 'far fa-circle'
                     },
                     {
                         name: 'ใบขอซื้อ',
                         path: ['/purchase-requisition'],
                         isShow: true,
-                        icon: 'fas fa-circle'
+                        icon: 'far fa-circle'
                     }
                 ]
             },
-            { 
+            {
               name: 'รายงานสภาพอากาศ',
               isShow: this.checkRoleUser(),
               path: ['/weather-station'],
