@@ -47,6 +47,9 @@ import {uiReducer} from './store/ui/reducer';
 import { PurchaseOrderComponent } from './pages/purchase-order/purchase-order.component';
 import { PurchaseRequisitionComponent } from './pages/purchase-requisition/purchase-requisition.component';
 import { WeatherStationComponent } from './pages/weather-station/weather-station.component';
+import { TemperatureComponent } from './pages/temperature/temperature.component';
+import { AirQualityComponent } from './pages/air-quality/air-quality.component';
+import { OpdEyeComponent } from './pages/opd-eye/opd-eye.component';
 registerLocaleData(localeEn, 'en-EN');
 
 @NgModule({
@@ -85,6 +88,9 @@ registerLocaleData(localeEn, 'en-EN');
         PurchaseOrderComponent,
         PurchaseRequisitionComponent,
         WeatherStationComponent,
+        TemperatureComponent,
+        AirQualityComponent,
+        OpdEyeComponent,
     ],
     imports: [
         BrowserModule,

@@ -19,6 +19,9 @@ import { FormInputsComponent } from '@pages/form-inputs/form-inputs.component';
 import { PurchaseOrderComponent } from './pages/purchase-order/purchase-order.component';
 import { PurchaseRequisitionComponent } from '@pages/purchase-requisition/purchase-requisition.component';
 import { WeatherStationComponent } from './pages/weather-station/weather-station.component';
+import { TemperatureComponent } from './pages/temperature/temperature.component';
+import {AirQualityComponent} from './pages/air-quality/air-quality.component';
+import { OpdEyeComponent } from './pages/opd-eye/opd-eye.component';
 const routes: Routes = [
     {
         path: '',
@@ -69,6 +72,18 @@ const routes: Routes = [
             {
                 path: 'weather-station',
                 component: WeatherStationComponent
+            },
+            {
+                path: 'temperature',
+                component: TemperatureComponent
+            },
+            {
+                path: 'air-quality',
+                component: AirQualityComponent
+            },
+            {
+                path: 'opd-eye',
+                component: OpdEyeComponent
             },
         ]
     },

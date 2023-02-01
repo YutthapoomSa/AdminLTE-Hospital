@@ -138,7 +138,27 @@ export class MenuSidebarComponent implements OnInit {
               name: 'รายงานสภาพอากาศ',
               isShow: this.checkRoleUser(),
               path: ['/weather-station'],
-              icon: 'fas fa-cloud-sun-rain'
+              icon: 'fas fa-cloud-sun-rain',
+              children: [
+                {
+                    name: 'Temp Monitoring',
+                    path: ['/temperature'],
+                    isShow: true,
+                    icon: 'far fa-circle'
+                },
+                {
+                    name: 'Air Quality Report', 
+                    path: ['/air-quality'],
+                    isShow: true,
+                    icon: 'far fa-circle'
+                },
+                {
+                    name: 'OPD Eye',
+                    path: ['/opd-eye'],
+                    isShow: true,
+                    icon: 'far fa-circle'
+                }
+            ]
            },
             // {
             //     name: 'จัดการบัญชีผู้ใช้',
