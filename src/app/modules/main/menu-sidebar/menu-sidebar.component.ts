@@ -166,12 +166,12 @@ export class MenuSidebarComponent implements OnInit {
             //     isShow: this.checkRoleUser(),
             //     icon: 'fas fa-user-circle'
             // },
-            {
-                name: 'ออกจากระบบ',
-                path: ['/logout'],
-                isShow: true,
-                icon: 'fas fa-sign-out-alt'
-            }
+            // {
+            //     name: 'ออกจากระบบ',
+            //     path: ['/logout'],
+            //     isShow: true,
+            //     icon: 'fas fa-sign-out-alt'
+            // }
         ];
     }
 }
