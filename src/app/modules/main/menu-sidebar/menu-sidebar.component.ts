@@ -140,12 +140,12 @@ export class MenuSidebarComponent implements OnInit {
               path: ['/weather-station'],
               icon: 'fas fa-cloud-sun-rain'
            },
-            {
-                name: 'จัดการบัญชีผู้ใช้',
-                path: ['/profile'],
-                isShow: this.checkRoleUser(),
-                icon: 'fas fa-user-circle'
-            },
+            // {
+            //     name: 'จัดการบัญชีผู้ใช้',
+            //     path: ['/profile'],
+            //     isShow: this.checkRoleUser(),
+            //     icon: 'fas fa-user-circle'
+            // },
             {
                 name: 'ออกจากระบบ',
                 path: ['/logout'],

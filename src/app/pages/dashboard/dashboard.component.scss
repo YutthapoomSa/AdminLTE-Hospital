@@ -14,10 +14,7 @@ p {
     color: darken(#ccc, 10%);
     font-weight: 300;
 }
-// h1, h2, h3, h4, h5, h6,
-// .h1, .h2, .h3, .h4, .h5, .h6 {
-// 	 font-family: $font-family-sans-serif;
-// }
+
 a {
     transition: 0.3s all ease;
     &,
@@ -43,18 +40,18 @@ a {
     }
 }
 
-.media-29101 {
-    img {
-        margin-bottom: 20px;
-    }
-    h3 {
-        font-size: 18px;
-        font-weight: 900 !important;
-        a {
-            color: secondary;
-        }
-    }
-}
+// .media-29101 {
+//     img {
+//         margin-bottom: 20px;
+//     }
+//     h3 {
+//         font-size: 18px;
+//         font-weight: 900 !important;
+//         a {
+//             color: secondary;
+//         }
+//     }
+// }
 
 .owl-2-style {
     .owl-nav {
