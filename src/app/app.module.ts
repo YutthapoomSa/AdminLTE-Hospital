@@ -44,6 +44,9 @@ import {MainMenuComponent} from './pages/main-menu/main-menu.component';
 import {SubMenuComponent} from './pages/main-menu/sub-menu/sub-menu.component';
 import {authReducer} from './store/auth/reducer';
 import {uiReducer} from './store/ui/reducer';
+import { PurchaseOrderComponent } from './pages/purchase-order/purchase-order.component';
+import { PurchaseRequisitionComponent } from './pages/purchase-requisition/purchase-requisition.component';
+import { WeatherStationComponent } from './pages/weather-station/weather-station.component';
 registerLocaleData(localeEn, 'en-EN');
 
 @NgModule({
@@ -78,7 +81,10 @@ registerLocaleData(localeEn, 'en-EN');
         PreviewPdfComponent,
         LogoutComponent,
         FormInputsComponent,
-        FormLayoutsComponent
+        FormLayoutsComponent,
+        PurchaseOrderComponent,
+        PurchaseRequisitionComponent,
+        WeatherStationComponent,
     ],
     imports: [
         BrowserModule,

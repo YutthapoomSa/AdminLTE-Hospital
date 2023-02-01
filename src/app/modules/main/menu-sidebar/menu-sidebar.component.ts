@@ -122,13 +122,13 @@ export class MenuSidebarComponent implements OnInit {
                 children: [
                     {
                         name: 'ใบสั่งซื้อ',
-                        path: ['/form-inputs'],
+                        path: ['/purchase-order'],
                         isShow: true,
                         icon: 'fas fa-circle'
                     },
                     {
                         name: 'ใบขอซื้อ',
-                        path: ['/form-layouts'],
+                        path: ['/purchase-requisition'],
                         isShow: true,
                         icon: 'fas fa-circle'
                     }
@@ -137,7 +137,7 @@ export class MenuSidebarComponent implements OnInit {
             { 
               name: 'รายงานสภาพอากาศ',
               isShow: this.checkRoleUser(),
-              path: ['/profile'],
+              path: ['/weather-station'],
               icon: 'fas fa-cloud-sun-rain'
            },
             {

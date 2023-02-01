@@ -16,7 +16,9 @@ import { PersonnelOverviewComponent } from '@pages/personnel-overview/personnel-
 import { ProfileComponent } from '@pages/profile/profile.component';
 import { FormLayoutsComponent } from '@pages/form-layouts/form-layouts.component';
 import { FormInputsComponent } from '@pages/form-inputs/form-inputs.component';
-
+import { PurchaseOrderComponent } from './pages/purchase-order/purchase-order.component';
+import { PurchaseRequisitionComponent } from '@pages/purchase-requisition/purchase-requisition.component';
+import { WeatherStationComponent } from './pages/weather-station/weather-station.component';
 const routes: Routes = [
     {
         path: '',
@@ -55,7 +57,19 @@ const routes: Routes = [
             {
                 path: 'profile',
                 component: ProfileComponent
-            }
+            },
+            {
+                path: 'purchase-order',
+                component: PurchaseOrderComponent
+            },
+            {
+                path: 'purchase-requisition',
+                component: PurchaseRequisitionComponent
+            },
+            {
+                path: 'weather-station',
+                component: WeatherStationComponent
+            },
         ]
     },
     {
