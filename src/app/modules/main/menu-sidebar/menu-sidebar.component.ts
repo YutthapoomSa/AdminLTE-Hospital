@@ -65,7 +65,6 @@ export class MenuSidebarComponent implements OnInit {
                 class: 'text',
                 isShow: true
             },
-
             {
                 name: 'รายงานข้อมูลและสถิติ',
                 isShow: this.checkRoleUser(),
@@ -121,7 +120,6 @@ export class MenuSidebarComponent implements OnInit {
                 isShow: this.checkRoleUser(),
                 icon: 'fas fa-solid fa-file-signature',
                 children: [
-
                     {
                         name: 'ใบสั่งซื้อ',
                         path: ['/form-inputs'],
@@ -136,12 +134,12 @@ export class MenuSidebarComponent implements OnInit {
                     }
                 ]
             },
-            {
+            { 
               name: 'รายงานสภาพอากาศ',
-              path: ['/profile'],
               isShow: this.checkRoleUser(),
+              path: ['/profile'],
               icon: 'fas fa-cloud-sun-rain'
-          },
+           },
             {
                 name: 'จัดการบัญชีผู้ใช้',
                 path: ['/profile'],
