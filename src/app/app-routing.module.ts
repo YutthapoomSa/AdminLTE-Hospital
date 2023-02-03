@@ -87,7 +87,7 @@ const routes: Routes = [
                 component: OpdEyeComponent
             },
             {
-                path: 'practice-field',
+                path: 'practicet-field',
                 component: PracticeFieldComponent
             },
         ]
