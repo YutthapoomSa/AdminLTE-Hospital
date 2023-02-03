@@ -50,6 +50,7 @@ import { WeatherStationComponent } from './pages/weather-station/weather-station
 import { TemperatureComponent } from './pages/temperature/temperature.component';
 import { AirQualityComponent } from './pages/air-quality/air-quality.component';
 import { OpdEyeComponent } from './pages/opd-eye/opd-eye.component';
+import { PracticeFieldComponent } from './pages/practice-field/practice-field.component';
 registerLocaleData(localeEn, 'en-EN');
 
 @NgModule({
@@ -91,6 +92,7 @@ registerLocaleData(localeEn, 'en-EN');
         TemperatureComponent,
         AirQualityComponent,
         OpdEyeComponent,
+        PracticeFieldComponent,
     ],
     imports: [
         BrowserModule,
