@@ -22,7 +22,7 @@
        
             <ng-container  ner *ngFor="let item of menu">
                 <app-menu-item 
-                    *ngIf="item.isShow"
+                    *ngIf="item.id"
                     [menuItem]="item"
                 ></app-menu-item>
             </ng-container>

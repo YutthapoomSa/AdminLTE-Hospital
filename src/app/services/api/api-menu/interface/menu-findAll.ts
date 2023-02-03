@@ -5,8 +5,9 @@ export interface Root {
 }
 
 export interface ResFindAllMenu {
-    menuId: number;
+    id: number;
     menuName: string;
+    icon: string;
     iframeMenu: string;
     subMenuLists: SubMenuList[];
 }
@@ -16,5 +17,5 @@ export interface SubMenuList {
     submenuName: string;
     iframe: string;
     link: string;
-    page: string;
+    submenuIcon: string;
 }

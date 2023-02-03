@@ -1,23 +1,41 @@
 <a
     (click)="handleMainMenuAction()"
     class="nav-link"
-    [ngClass]="{active: isMainActive || isOneOfChildrenActive}"
-    *ngIf="menuItem.isShow"
+    [ngClass]="{active: isMainActive || isOneOfChildrenActive}" 
+    *ngIf="menuItem.id"
 >
-    <i class="nav-icon {{ menuItem.icon }}"></i>
-    <p class="nav-pills">{{ menuItem.name }}</p>
+    <i  class="nav-icon {{ menuItem.icon }}"></i>
+    <!-- <a [routerLink]="menuItem.iframeMenu"></a> -->
+    <a [routerLink]="menuItem.iframeMenu">
+    <p class="nav-pills">{{ menuItem.menuName }}</p></a>
     <i
-        *ngIf="isExpandable && menuItem.children.length > 0"
+        *ngIf="isExpandable && menuItem.subMenuLists.length > 0"
         class="right fas fa-angle-left"
     ></i>
 </a>
-<ul class="nav nav-treeview" *ngFor="let item of menuItem.children">
-    <li class="nav-item" *ngIf="item.isShow">
-        <!-- <a [routerLink]="item.path" [routerLinkActive]="'active'" class="nav-link"> -->
-        <a [routerLink]="item.path" class="nav-link">
+<ul class="nav nav-treeview" *ngFor="let item of menuItem.subMenuLists">
+    <li class="nav-item" *ngIf="item.submenuId">
+        <!-- <a [routerLink]="item.iframeMenu" [routerLinkActive]="'active'" class="nav-link"> -->
+        <!-- ถ้า item.link ให้ใช้ [herf]="item.link"  ถ้า item.iframe ให้ใช้ [routerLink]-->
+        <a
+            *ngIf="item.link"
+            [href]="item.link"
+            class="nav-link"
+            target="_blank"
+        >
             &nbsp;
-            <i class="nav-icon {{ item.icon }}"></i>
-            <p>{{ item.name }}</p>
+            <i class="nav-icon {{ item.submenuIcon }}"></i>
+            <p>{{ item.submenuName }}</p>
+        </a>
+        <a
+            *ngIf="item.iframe"
+            [routerLink]="item.iframe"
+            [routerLinkActive]="'active'"
+            class="nav-link"
+        >
+            &nbsp;
+            <i class="nav-icon {{ item.submenuIcon }}"></i>
+            <p>{{ item.submenuName }}</p>
         </a>
     </li>
 </ul>

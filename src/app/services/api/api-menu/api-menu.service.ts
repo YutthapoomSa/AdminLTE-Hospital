@@ -6,6 +6,7 @@ import {environment} from 'environments/environment';
 import {ReqUpdateMenu, ResUpdateMenu} from './interface/menu-update';
 import {ResFindOneMenu} from './interface/menu-findOne';
 import {ResFindAllMenu} from './interface/menu-findAll';
+import { map } from 'rxjs/operators';
 
 @Injectable({
     providedIn: 'root'
@@ -36,8 +37,8 @@ export class ApiMenuService {
 
     menuFindAll(): Observable<ResFindAllMenu[]> {
         return this.http.get<ResFindAllMenu[]>(
-            `${environment.Url}/menu/findAllMenu`
-        );
+            `${environment.Url}/menu/Menu/findAllMenu`
+        ).pipe(map((response) => response['resData']));
     }
 
     menuDelete(id: number): Observable<any> {

@@ -8,17 +8,17 @@ import {filter} from 'rxjs/operators';
     styleUrls: ['./menu-item.component.scss']
 })
 export class MenuItemComponent implements OnInit {
-    @Input() menuItem: any = null;
+    @Input() menuItem: any = [];
     public isExpandable: boolean = false;
     @HostBinding('class.nav-item') isNavItem: boolean = true;
     @HostBinding('class.menu-open') isMenuExtended: boolean = false;
     public isMainActive: boolean = false;
     public isOneOfChildrenActive: boolean = false;
 
-    constructor(private router: Router) {}
+    constructor(private router: Router,) {}
 
     ngOnInit(): void {
-        if (this.menuItem && this.menuItem.children && this.menuItem.children.length > 0) {
+        if (this.menuItem && this.menuItem.subMenuLists && this.menuItem.subMenuLists.length > 0) {
             this.isExpandable = true;
         }
         this.calculateIsActive(this.router.url);
@@ -32,7 +32,7 @@ export class MenuItemComponent implements OnInit {
             this.toggleMenu();
             return;
         }
-        this.router.navigate(this.menuItem.path);
+        this.router.navigate(this.menuItem.iframeMenu);
     }
 
     public toggleMenu() {
@@ -43,13 +43,13 @@ export class MenuItemComponent implements OnInit {
         this.isMainActive = false;
         this.isOneOfChildrenActive = false;
         if (this.isExpandable) {
-            this.menuItem.children.forEach((item) => {
-                if (item.path[0] === url) {
+            this.menuItem.subMenuLists.forEach((item) => {
+                if (item.iframe[0] === url) {
                     this.isOneOfChildrenActive = true;
                     this.isMenuExtended = true;
                 }
             });
-        } else if (this.menuItem.path[0] === url) {
+        } else if (this.menuItem.iframeMenu[0] === url) {
             this.isMainActive = true;
         }
         if (!this.isMainActive && !this.isOneOfChildrenActive) {
