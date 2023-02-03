@@ -70,10 +70,10 @@ const routes: Routes = [
                 path: 'purchase-requisition',
                 component: PurchaseRequisitionComponent
             },
-            {
-                path: 'weather-station',
-                component: WeatherStationComponent
-            },
+            // {
+            //     path: 'weather-station',
+            //     component: WeatherStationComponent
+            // },
             {
                 path: 'temperature',
                 component: TemperatureComponent
