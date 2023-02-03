@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "ng serve",
+    "start": "ng serve --host 192.168.100.10 --disable-host-check",
     "build": "ng build --configuration production",
     "test": "ng test",
     "lint": "ng lint",
