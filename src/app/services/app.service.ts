@@ -23,7 +23,7 @@ export class AppService {
             showConfirmButton: false,
             timer: 1000
         });
-        await this.router.navigate(['/login']);
+        await this.router.navigate(['/dashboard']);
     }
 
     delay(time: number) {

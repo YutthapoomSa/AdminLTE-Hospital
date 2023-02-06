@@ -60,10 +60,26 @@ export class MenuSidebarComponent implements OnInit {
         }
     }
     async initMenu() {
-        if (this.checkRoleUser()) {
-        this.menu = await this.apiMenuService.menuFindAll().toPromise();
-        // } else {
-        // this.menu = await this.apiMenuService.menuFindAllUser().toPromise();
+        // ถ้ามีการเข้าสู่ระบบให้เรียกข้อมูลเมนูจาก API
+        if (this.localService.getToken()) {
+            this.menu = await this.apiMenuService.menuFindAll().toPromise();
+        } else {
+            this.menu = [
+                {
+                    "id": 1,
+                    "menuName": "ข่าวประชาสัมพันธ์",
+                    "icon": "fas fa-newspaper",
+                    "iframeMenu": "dashboard",
+                    "subMenuLists": []
+                },
+                {
+                    "id": 2,
+                    "menuName": "ลงชื่อเข้าใช้",
+                    "icon": "fas fa-sign-in-alt",
+                    "iframeMenu": "login",
+                    "subMenuLists": []
+                }
+            ];
         }
     }
 }
