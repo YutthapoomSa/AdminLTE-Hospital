@@ -1,4 +1,4 @@
-import {NgModule} from '@angular/core';
+import {Component, NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {AuthGuard} from '@guards/auth.guard';
 import {NonAuthGuard} from '@guards/non-auth.guard';
@@ -23,6 +23,7 @@ import { TemperatureComponent } from './pages/temperature/temperature.component'
 import {AirQualityComponent} from './pages/air-quality/air-quality.component';
 import { OpdEyeComponent } from './pages/opd-eye/opd-eye.component';
 import { PracticeFieldComponent } from './pages/practice-field/practice-field.component';
+import { BalanceComponent } from './pages/balance/balance.component';
 const routes: Routes = [
     {
         path: '',
@@ -89,6 +90,10 @@ const routes: Routes = [
             {
                 path: 'practice-field',
                 component: PracticeFieldComponent
+            },
+            {
+                path: 'balance',
+                component: BalanceComponent
             },
         ]
     },
