@@ -22,6 +22,28 @@ a {
         text-decoration: none !important;
     }
 }
+
+.txt {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.card-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.card-text {
+    font-size: 26px;
+    color: #c0c0c0;
+}
+
+.card-img-top {
+    width:auto;
+    height: 300px;
+}
+
 .content {
     padding: 7rem 0;
 }
@@ -85,3 +107,159 @@ a {
         }
     }
 }
+
+@media only screen and (max-width: 2560px) {
+    .txt { 
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .card-title {
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .card-text {
+        font-size: 26px;
+        color: #c0c0c0;
+    }
+
+    .card-img-top {
+        width:auto;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .txt { 
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .card-title {
+        font-size: 22px;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .card-text {
+        font-size: 18px;
+        color: #c0c0c0;
+    }
+
+    .card-img-top {
+        width:auto;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width:1440px) {
+    .txt { 
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .card-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .card-text {
+        font-size: 16px;
+        color: #c0c0c0;
+    }
+
+    .card-img-top {
+        width:auto;
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .txt {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .card-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .card-text {
+        font-size: 16px;
+        color: #c0c0c0;
+    }
+
+    .card-img-top {
+        width:auto;
+        height: 260px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .txt {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .card-title {
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .card-text {
+        font-size: 14px;
+        color: #c0c0c0;
+    }
+
+    .card-img-top {
+        width:auto;
+        height: 230px;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .txt {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .card-title {
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .card-text {
+        font-size: 12px;
+        color: #c0c0c0;
+    }
+
+    .card-img-top {
+        width:auto;
+        height: 200px;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .txt {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .card-title {
+        font-size: 13px;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .card-text {
+        font-size: 11px;
+        color: #c0c0c0;
+    }
+  }
