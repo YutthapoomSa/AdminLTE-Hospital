@@ -2,6 +2,14 @@
   <ng-container dropdown-button>
     <i class="fas fa-user-circle" style="font-size: 25px;"></i>
       <!-- <span class="badge badge-danger navbar-badge">3</span> -->
+      <!-- <div class="media align-items-center">
+        <span class="avatar avatar-sm rounded-circle">
+          <img alt="Image placeholder" src="assets/img/profile.png" class="img-user" >
+        </span>
+        <div class="media-body ml-2 d-none d-sm-block">
+          <span class="mb-0 text-sm  font-weight-bold">Jessica Jones</span>
+        </div>
+      </div> -->
   </ng-container>
   <ng-container *ngIf="login else loginTemplate" dropdown-menu>
       <div class="dropdown-divider"></div>
@@ -15,5 +23,4 @@
         <a href="login" routerLink="login" class="dropdown-item dropdown-footer">
           <i class="fas fa-sign-in-alt" style="font-size: 20px;">&nbsp;&nbsp;</i>ลงชื่อเข้าใช้</a>
       </ng-template>
-
 </app-dropdown>
