@@ -4,6 +4,66 @@
     font-family: 'Prompt', sans-serif;
 }
 
+
 :host {
     display: block;
 }
+
+.txt {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 2560px) {
+    .txt {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .txt {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .txt {
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .txt {
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .txt {
+        font-size: 11px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .txt {
+        font-size: 9px;
+        font-weight: bold;
+    }
+
+    a.txt {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .txt {
+        font-size: 9px;
+        font-weight: bold;
+    }
+}
+
