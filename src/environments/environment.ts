@@ -5,7 +5,7 @@
 export const environment = {
     production: true,
 
-    Url: 'http://pdsolution.trueddns.com:44779'
+    Url: 'https://5f3c-2001-fb1-18f-17d7-a655-87d1-6415-bde1.ap.ngrok.io'
 };
 
 /*

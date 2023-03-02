@@ -62,7 +62,102 @@ export class MenuSidebarComponent implements OnInit {
     async initMenu() {
         // ถ้ามีการเข้าสู่ระบบให้เรียกข้อมูลเมนูจาก API
         if (this.localService.getToken()) {
-            this.menu = await this.apiMenuService.menuFindAll().toPromise();
+            this.menu = [
+                {
+                    "id": 1,
+                    "menuName": "ข่าวประชาสัมพันธ์",
+                    "icon": "fas fa-newspaper",
+                    "iframeMenu": "/dashboard",
+                    "subMenuLists": []
+                },
+                {
+                    "id": 2,
+                    "menuName": "รายงานข้อมูลและสถิติ",
+                    "icon": "fas fa-chart-pie",
+                    "iframeMenu": null,
+                    "subMenuLists": [
+                        {
+                            "submenuId": 1,
+                            "submenuName": "ภาพรวมโรงพยาบาล",
+                            "iframe": "form-inputs",
+                            "link": null,
+                            "submenuIcon": "far fa-circle"
+                        },
+                        {
+                            "submenuId": 2,
+                            "submenuName": "ภาพรวมบุคลากร",
+                            "iframe": "form-layouts",
+                            "link": null,
+                            "submenuIcon": "far fa-circle"
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "menuName": "รายการสั่งซื้อ",
+                    "icon": "fas fa-solid fa-file-signature",
+                    "iframeMenu": null,
+                    "subMenuLists": [
+                        {
+                            "submenuId": 3,
+                            "submenuName": "ใบสั่งซื้อ",
+                            "iframe": "purchase-order",
+                            "link": null,
+                            "submenuIcon": "far fa-circle"
+                        },
+                        {
+                            "submenuId": 4,
+                            "submenuName": "ใบขอซื้อ",
+                            "iframe": "purchase-requisition",
+                            "link": null,
+                            "submenuIcon": "far fa-circle"
+                        },
+                        {
+                            "submenuId": 11,
+                            "submenuName": "ยอดของยาและเวชภัณฑ์",
+                            "iframe": "balance",
+                            "link": null,
+                            "submenuIcon": "far fa-circle"
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "menuName": "รายงานสภาพอากาศ",
+                    "icon": "fas fa-cloud-sun-rain",
+                    "iframeMenu": null,
+                    "subMenuLists": [
+                        {
+                            "submenuId": 7,
+                            "submenuName": "Temp Monitoring",
+                            "iframe": "temperature",
+                            "link": null,
+                            "submenuIcon": "far fa-circle"
+                        },
+                        {
+                            "submenuId": 8,
+                            "submenuName": "Air Quality Report",
+                            "iframe": "air-quality",
+                            "link": null,
+                            "submenuIcon": "far fa-circle"
+                        },
+                        {
+                            "submenuId": 9,
+                            "submenuName": "OPD Eye",
+                            "iframe": "opd-eye",
+                            "link": null,
+                            "submenuIcon": "far fa-circle"
+                        },
+                        {
+                            "submenuId": 10,
+                            "submenuName": "สนามฝึก",
+                            "iframe": "practice-field",
+                            "link": null,
+                            "submenuIcon": "far fa-circle"
+                        }
+                    ]
+                }
+            ]
         } else {
             this.menu = [
                 {
